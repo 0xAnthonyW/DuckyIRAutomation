@@ -1,7 +1,8 @@
 # DuckyIRAutomation
 
 This project demonstrates how to use the DSTIKE White Ducky to automate the execution of a PowerShell script with elevated privileges, handle User Account Control (UAC) prompts, and leverage the power of the DuckyScript language.
-Overview
+
+## Overview
 
 The script utilizes the DSTIKE White Ducky's keyboard emulation capabilities to:
 1. Open the Run dialog.
