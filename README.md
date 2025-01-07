@@ -12,13 +12,13 @@ The script utilizes the DSTIKE White Ducky's keyboard emulation capabilities to:
 
 ## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - DSTIKE White Ducky with  or without IR capabilities.
 - A PowerShell script to be executed (e.g., D:\Test2.ps1).
 - Basic understanding of DuckyScript syntax.
 
-## Script Details
+### Script Details
 
 Below is the DuckyScript used in this project:
 ```plaintext
