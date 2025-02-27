@@ -10,7 +10,7 @@ STRING Start-Process powershell -ArgumentList '
 DELAY 50
 STRING -NoProfile -ExecutionPolicy Bypass -File \"
 DELAY 50
-STRING D:\\slide.ps1\"' -Verb RunAs"
+STRING D:\\test.ps1\"' -Verb RunAs"
 DELAY 100
 
 REM Execute the command
