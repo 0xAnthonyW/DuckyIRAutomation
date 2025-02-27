@@ -22,10 +22,25 @@ The script utilizes the DSTIKE White Ducky's keyboard emulation capabilities to:
 
 Below is the DuckyScript used in this project:
 ```plaintext
-DELAY 3000
+REM Open Run dialog and wait for it to appear
+DELAY 1000
 GUI r
-DELAY 500
-STRING powershell -Command "Start-Process powershell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File \"D:\\Test2.ps1\"' -Verb RunAs"
-DELAY 500
+DELAY 1000
+
+REM Type the PowerShell command in segments to avoid issues
+STRING powershell -Command "
+DELAY 50
+STRING Start-Process powershell -ArgumentList '
+DELAY 50
+STRING -NoProfile -ExecutionPolicy Bypass -File \"
+DELAY 50
+STRING D:\\slide.ps1\"' -Verb RunAs"
+DELAY 100
+
+REM Execute the command
 ENTER
+DELAY 4000
+
+REM Confirm UAC prompt (Alt+Y = "Yes")
+ALT y
 ```
